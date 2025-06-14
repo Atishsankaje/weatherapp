@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
-<body class="bg-[url('images/bg_image.jpg')] bg-cover bg-center bg-no-repeat min-h-screen items-center flex flex-col gap-5"> 
+<body class="bg-[url('{% static 'images/bg_image.jpg' %}')] bg-cover bg-center bg-no-repeat min-h-screen items-center flex flex-col gap-5"> 
     <div class="flex flex-row items-center">
         <h1 class="text-white text-2xl">Weather App</h1>
         <img src="{% static 'images/116.png' %}" alt="image not found">
@@ -25,5 +27,18 @@
         </div>
         <img src="{% static 'images/113.png' %}" alt="" class="w-28 h-28">
     </div>
+    <div class="bg-[#4eb5d7] text-white">
+        <img src="{% static 'images/116.png' %}" alt="image not found" class="w-20 h-20">
+        <div>
+            <P>cloudy</P>
+            <P>more likely</P>
+        </div>
+        <div>
+            <div><P>Temperature</P></div>
+            <div><P>Humidity</P></div>
+            <div><P>Wind Speed</P></div>
+        </div>
+    </div>
+
 </body>
 </html>
